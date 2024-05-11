@@ -1,0 +1,30 @@
+.middleimage {
+  background-image: url(../images/library.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1262px;
+  height: 502px;
+  top: 58px;
+  margin-left: 121px;
+  margin-right: 121px;
+  opacity: 0.8; /* Adjust opacity value */
+  z-index: 1;
+}
+
+.title {
+  width: 1027px;
+  height: 465px;
+  top: 95px;
+  left: 151px;
+  gap: 0px;
+  opacity: 1;
+}
+
+.titlename {
+  color: rgba(245, 245, 245, 1);
+  font-family: Inter;
+  font-size: 128px;
+  font-weight: 700;
+  line-height: 154.91px;
+  text-align: left;
+}
