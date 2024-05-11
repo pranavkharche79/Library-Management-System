@@ -1,6 +1,5 @@
 import React from "react";
 import "../CSS/Home.css";
-import Login from "./Login";
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
         <div className="title">
           <span className="titlename">e-Library Management System</span>
         </div>
-        <Login />
       </div>
     </>
   );

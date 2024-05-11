@@ -7,7 +7,7 @@
   top: 58px;
   margin-left: 121px;
   margin-right: 121px;
-  opacity: 0.8; /* Adjust opacity value */
+  opacity: 1; /* Adjust opacity value */
   z-index: 1;
 }
 
@@ -22,7 +22,7 @@
 
 .titlename {
   color: rgba(245, 245, 245, 1);
-  font-family: Inter;
+  font-family: inherit;
   font-size: 128px;
   font-weight: 700;
   line-height: 154.91px;

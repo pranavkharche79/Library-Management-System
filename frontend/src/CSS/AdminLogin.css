@@ -1,0 +1,93 @@
+.block {
+  width: 1262px;
+  height: 360px;
+  top: 560px;
+  left: 121px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: rgba(51, 111, 119, 0.99);
+  box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.blockimage {
+  width: 427px;
+  height: 319px;
+  margin-top: 20px;
+  margin-left: 60px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.form {
+  width: 700px;
+  height: 319px;
+  margin-top: -323px;
+  margin-left: 500px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.usernametext {
+  position: absolute;
+  width: 330px;
+  height: 99px;
+  margin-top: 40px;
+  font-family: inherit;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.inputusername {
+  width: 336px;
+  height: 47px;
+  margin-top: 55px;
+  margin-left: 320px;
+  background: rgba(217, 217, 217, 1);
+  font-weight: bold; /* Make text bold */
+  font-size: 48px; /* Set font size */
+}
+
+.passwordtext {
+  position: absolute;
+  width: 330px;
+  height: 124px;
+  margin-top: 30px;
+  font-family: inherit;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.inputpassword {
+  width: 336px;
+  height: 47px;
+  margin-top: 40px;
+  margin-left: 320px;
+  background: rgba(217, 217, 217, 1);
+  font-weight: bold; /* Make text bold */
+  font-size: 48px; /* Set font size */
+}
+
+.login {
+  position: absolute;
+  text-align: center;
+  width: 261px;
+  height: 58px;
+  margin-top: 140px;
+  left: 865px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: inherit;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 60.51px;
+  color: rgba(0, 0, 0, 1);
+}

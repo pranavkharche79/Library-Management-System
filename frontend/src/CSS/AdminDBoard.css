@@ -1,0 +1,79 @@
+.block {
+  position: absolute;
+  width: 1262px;
+  height: 360px;
+  margin-top: -60px;
+  margin-left: 0px;
+  background-color: rgba(51, 111, 119, 0.99);
+  box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.addbook {
+  display: grid;
+  place-items: center;
+  width: 386px;
+  height: 102px;
+  margin-top: 50px;
+  border-radius: 100px 100px 100px 100px;
+  background-color: rgba(175, 143, 143, 1);
+  box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bsearch {
+  display: grid;
+  place-items: center;
+  width: 386px;
+  height: 102px;
+  margin-top: -100px;
+  margin-left: 440px;
+  border-radius: 100px 100px 100px 100px;
+  background-color: rgba(175, 143, 143, 1);
+  box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bupdate {
+  display: grid;
+  place-items: center;
+  width: 386px;
+  height: 102px;
+  margin-top: -100px;
+  margin-left: 875px;
+  border-radius: 100px 100px 100px 100px;
+  background-color: rgba(175, 143, 143, 1);
+  box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.vieworder {
+  display: grid;
+  place-items: center;
+  width: 386px;
+  height: 102px;
+  margin-top: 72px;
+  margin-left: 200px;
+  border-radius: 100px 100px 100px 100px;
+  background-color: rgba(175, 143, 143, 1);
+  box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.asignout {
+  display: grid;
+  place-items: center;
+  width: 386px;
+  height: 102px;
+  margin-top: -100px;
+  margin-left: 700px;
+  border-radius: 100px 100px 100px 100px;
+  background-color: rgba(175, 143, 143, 1);
+  box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.adbtext {
+  width: 340px;
+  height: 45px;
+  font-family: inherit;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 36.56px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
