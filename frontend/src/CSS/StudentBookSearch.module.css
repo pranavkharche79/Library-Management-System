@@ -1,34 +1,9 @@
-.table {
-  position: absolute;
-  width: 1017px;
-  height: 96px;
-  margin-top: 150px;
-  margin-left: 234px;
-  border-collapse: collapse;
-}
-
-.table th,
-.table td {
-  padding: 8px;
-  border: 1px solid black;
-  font-family: inherit;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 36.31px;
-  text-align: left;
-  background-color: #f2f2f2;
-}
-
-.table th {
-  background-color: #f2f2f2;
-}
-
-.viewordertext {
+.bsearchtext {
   position: absolute;
   width: 336px;
   height: 58px;
-  margin-top: 339px;
-  margin-left: 251px;
+  margin-top: 116px;
+  margin-left: 720px;
   font-family: inherit;
   font-size: 50px;
   font-weight: 700;
@@ -39,10 +14,10 @@
 
 .bookname {
   position: absolute;
-  width: 182px;
-  height: 56px;
-  margin-top: 354px;
-  margin-left: 680px;
+  width: 221px;
+  height: 53px;
+  margin-top: 220px;
+  margin-left: 654px;
   width: 182px;
   height: 56px;
   font-family: inherit;
@@ -57,7 +32,7 @@
   position: absolute;
   width: 279px;
   height: 32px;
-  margin-top: 355px;
+  margin-top: 225px;
   margin-left: 862px;
   font-family: inherit;
   font-size: 30px;
@@ -72,7 +47,7 @@
   position: absolute;
   width: 184px;
   height: 39px;
-  margin-top: 354px;
+  margin-top: 225px;
   margin-left: 1180px;
   font-family: inherit;
   font-size: 30px;
@@ -84,10 +59,10 @@
 
 .sugname {
   position: absolute;
-  width: 182px;
-  height: 56px;
-  margin-top: 410px;
-  margin-left: 680px;
+  width: 221px;
+  height: 53px;
+  margin-top: 276px;
+  margin-left: 654px;
   font-family: inherit;
   font-size: 30px;
   font-weight: 700;
@@ -100,7 +75,7 @@
   position: absolute;
   width: 279px;
   height: 32px;
-  margin-top: 410px;
+  margin-top: 281px;
   margin-left: 862px;
   font-family: inherit;
   font-size: 30px;
@@ -113,10 +88,10 @@
 
 .sugauthor {
   position: absolute;
-  width: 182px;
-  height: 56px;
-  margin-top: 465px;
-  margin-left: 680px;
+  width: 221px;
+  height: 53px;
+  margin-top: 332px;
+  margin-left: 654px;
   font-family: inherit;
   font-size: 30px;
   font-weight: 700;
@@ -129,7 +104,7 @@
   position: absolute;
   width: 279px;
   height: 32px;
-  margin-top: 465px;
+  margin-top: 337px;
   margin-left: 862px;
   font-family: inherit;
   font-size: 30px;
@@ -144,7 +119,7 @@
   position: absolute;
   width: 184px;
   height: 39px;
-  margin-top: 520px;
+  margin-top: 410px;
   margin-left: 781px;
   font-family: inherit;
   font-size: 30px;
@@ -155,16 +130,74 @@
   background-color: rgba(217, 217, 217, 1);
 }
 
-.totalorder {
+.table {
   position: absolute;
-  width: 501px;
-  height: 45px;
-  margin-top: 247px;
-  margin-left: 603px;
+  width: 1068px;
+  height: auto;
+  top: 123px;
+  margin-left: 186px;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid black;
+  background-color: #f2f2f2;
   font-family: inherit;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 650;
   line-height: 36.31px;
   text-align: left;
-  color: rgba(229, 34, 34, 1);
+}
+.table td {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid black;
+  background-color: #f2f2f2;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.31px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.aftertable {
+  position: absolute;
+  width: 608px;
+  height: 98px;
+  margin-top: 412px;
+  margin-left: 151px;
+  border-collapse: collapse;
+}
+
+.aftertable th {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid black;
+  background-color: #f2f2f2;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 650;
+  line-height: 36.31px;
+  text-align: left;
+}
+.aftertable td {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid black;
+  background-color: #f2f2f2;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.31px;
+  text-align: left;
+}
+
+.aftertable th {
+  background-color: #f2f2f2;
 }
