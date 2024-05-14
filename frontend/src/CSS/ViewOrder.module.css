@@ -1,0 +1,174 @@
+.table {
+  position: absolute;
+  width: 1017px;
+  height: 96px;
+  margin-top: 150px;
+  margin-left: 234px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.31px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.viewordertext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 339px;
+  margin-left: 251px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.bookname {
+  position: absolute;
+  width: 182px;
+  height: 56px;
+  margin-top: 354px;
+  margin-left: 680px;
+  width: 182px;
+  height: 56px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.titleinput {
+  position: absolute;
+  width: 279px;
+  height: 32px;
+  margin-top: 355px;
+  margin-left: 862px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.updatebutton {
+  position: absolute;
+  width: 184px;
+  height: 39px;
+  margin-top: 354px;
+  margin-left: 1180px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  background: rgba(217, 217, 217, 1);
+}
+
+.sugname {
+  position: absolute;
+  width: 182px;
+  height: 56px;
+  margin-top: 410px;
+  margin-left: 680px;
+  width: 182px;
+  height: 56px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.suginput {
+  position: absolute;
+  width: 279px;
+  height: 32px;
+  margin-top: 410px;
+  margin-left: 862px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.sugauthor {
+  position: absolute;
+  width: 182px;
+  height: 56px;
+  margin-top: 465px;
+  margin-left: 680px;
+  width: 182px;
+  height: 56px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.sugauthorinput {
+  position: absolute;
+  width: 279px;
+  height: 32px;
+  margin-top: 465px;
+  margin-left: 862px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.sugsearch {
+  position: absolute;
+  width: 184px;
+  height: 39px;
+  margin-top: 520px;
+  margin-left: 781px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(217, 217, 217, 1);
+}
+
+.totalorder {
+  position: absolute;
+  width: 501px;
+  height: 45px;
+  margin-top: 247px;
+  margin-left: 603px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(229, 34, 34, 1);
+}

@@ -1,0 +1,75 @@
+.addbook {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 190px;
+  margin-left: 225px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.bookimage {
+  position: absolute;
+  width: 453px;
+  height: 218px;
+  margin-top: 280px;
+  margin-left: 160px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.form {
+  position: absolute;
+  width: 700px;
+  height: 420px;
+  margin-top: 150px;
+  margin-left: 630px;
+}
+
+.formRow {
+  margin-top: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 182px;
+  height: 56px;
+}
+
+.text {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+input {
+  width: 279px;
+  height: 32px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.submitButton {
+  width: 184px;
+  height: 39px;
+  margin-top: 25px;
+  margin-left: 170px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}

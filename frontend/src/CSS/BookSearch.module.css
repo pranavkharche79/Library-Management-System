@@ -1,0 +1,141 @@
+.table {
+  position: absolute;
+  width: 1030px;
+  height: 99px;
+  margin-top: 130px;
+  margin-left: 261px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.31px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.beforesearchimg {
+  position: absolute;
+  width: 410px;
+  height: 285px;
+  margin-top: 175px;
+  margin-left: 177px;
+}
+
+.beforetext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 150px;
+  margin-left: 636px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.beforesearchblock {
+  position: absolute;
+  width: 700px;
+  height: 180px;
+  margin-top: 230px;
+  margin-left: 600px;
+}
+
+.beforebookidlabel {
+  position: absolute;
+  display: inline-block;
+  width: 182px;
+  height: 56px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.aftersearchimg {
+  position: absolute;
+  width: 354px;
+  height: 210px;
+  margin-top: 309px;
+  margin-left: 170px;
+}
+
+.btext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 320px;
+  left: 636px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.searchblock {
+  position: absolute;
+  width: 700px;
+  height: 180px;
+  margin-top: 390px;
+  margin-left: 600px;
+}
+
+.bookidlabel {
+  position: absolute;
+  display: inline-block;
+  width: 182px;
+  height: 56px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.bookidtext {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.bookidinput {
+  position: absolute;
+  width: 279px;
+  height: 32px;
+  margin-top: 20px;
+  margin-left: 230px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.searchbutton {
+  position: absolute;
+  width: 226px;
+  height: 52px;
+  margin-top: 100px;
+  margin-left: 121px;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: center;
+  color: rgba(51, 111, 119, 0.99);
+}

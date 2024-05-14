@@ -1,0 +1,196 @@
+.beforetext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 173px;
+  margin-left: 577px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.beforeuimg {
+  position: absolute;
+  width: 430px;
+  height: 259px;
+  margin-top: 274px;
+  margin-left: 157px;
+}
+
+.beforeublock {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  margin-top: 300px;
+  margin-left: 600px;
+}
+
+.beforeuidlabel {
+  position: absolute;
+  width: 182px;
+  height: 56px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.ubookidtext {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.ubookidinput {
+  position: absolute;
+  width: 279px;
+  height: 32px;
+  margin-top: 10px;
+  margin-left: 230px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.updatebutton {
+  position: absolute;
+  width: 184px;
+  height: 39px;
+  margin-top: 100px;
+  margin-left: 181px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(217, 217, 217, 1);
+}
+
+.aftertext {
+  position: absolute;
+  margin-top: -50px;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: center;
+  color: black;
+}
+
+.form {
+  position: absolute;
+  width: 472px;
+  height: 352px;
+  top: 114px;
+  padding-top: 36px;
+  padding-left: 15px;
+  margin-left: 646px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.formrow {
+  display: flex;
+}
+
+.formrow label {
+  width: 180px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.formrow span {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.formrow input {
+  width: 279px;
+  height: 32px;
+  border-color: white;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgb(114, 159, 207);
+}
+
+.form button {
+  width: 84px;
+  height: 39px;
+  margin-top: 20px;
+  margin-left: 90px;
+  border-color: white;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgb(114, 159, 207);
+}
+
+.beforeutext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 125px;
+  margin-left: 577px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.afterublock {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  margin-top: 200px;
+  margin-left: 600px;
+}
+
+.table {
+  position: absolute;
+  width: 1030px;
+  height: 99px;
+  margin-top: 390px;
+  margin-left: 261px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.31px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
