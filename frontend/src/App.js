@@ -13,6 +13,9 @@ import ViewOrder from "./Components/ViewOrder";
 import AdminSignout from "./Components/AdminSignout";
 import StudentBookSearch from "./Components/StudentBookSearch";
 import StudentLogout from "./Components/StudentLogout";
+import StudentData from "./Components/StudentData";
+import ReturnBook from "./Components/ReturnBook";
+import PlaceOrder from "./Components/PlaceOrder";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
           <Route path="/asignout" element={<AdminSignout />} />
           <Route path="/sbsearch" element={<StudentBookSearch />} />
           <Route path="/slogout" element={<StudentLogout />} />
+          <Route path="/sbookinfo" element={<StudentData />} />
+          <Route path="/sbookreturn" element={<ReturnBook />} />
+          <Route path="/sorderbook" element={<PlaceOrder />} />
         </Routes>
       </BrowserRouter>
     </>

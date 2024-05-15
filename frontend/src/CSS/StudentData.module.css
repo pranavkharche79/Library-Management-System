@@ -1,0 +1,155 @@
+.finetext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 202px;
+  margin-left: 258px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.stidentid {
+  position: absolute;
+  width: 182px;
+  height: 56px;
+  margin-top: 223px;
+  margin-left: 654px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+
+.studentidinput {
+  position: absolute;
+  width: 169px;
+  height: 32px;
+  margin-top: 221px;
+  margin-left: 856px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(217, 217, 217, 1);
+}
+
+.searchbut {
+  position: absolute;
+  width: 151px;
+  height: 45px;
+  margin-top: 272px;
+  margin-left: 809px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(43, 39, 238, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.issuedate {
+  position: absolute;
+  width: 337px;
+  height: 43px;
+  margin-top: 348px;
+  margin-left: 671px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.expirydate {
+  position: absolute;
+  width: 337px;
+  height: 43px;
+  margin-top: 418px;
+  margin-left: 671px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.finebut {
+  position: absolute;
+  width: 244px;
+  height: 45px;
+  margin-top: 465px;
+  margin-left: 799px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(43, 39, 238, 1);
+  background: rgba(217, 217, 217, 1);
+}
+
+.fineblock {
+  position: absolute;
+  width: 657px;
+  height: 346px;
+  margin-top: -348px;
+  left: 411px;
+  background-color: white;
+}
+
+.finedetail {
+  position: absolute;
+  width: 400px;
+  height: 55px;
+  margin-top: 20px;
+  margin-left: 180px;
+  font-family: inherit;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 56.31px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(114, 159, 207);
+}
+
+.latetext {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 30px;
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+}
+
+.tfinetext {
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 430px;
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+}
+
+.okfine {
+  position: absolute;
+  width: 151px;
+  height: 45px;
+  margin-top: 272px;
+  margin-left: 109px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(114, 159, 207);
+}

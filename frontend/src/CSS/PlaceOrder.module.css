@@ -1,0 +1,111 @@
+.bsearchtext {
+  position: absolute;
+  width: 336px;
+  height: 58px;
+  margin-top: 180px;
+  margin-left: 258px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60.51px;
+  text-align: left;
+  color: rgba(245, 245, 245, 1);
+}
+.bookname {
+  position: absolute;
+  width: 242px;
+  height: 39px;
+  margin-top: 127px;
+  margin-left: 633px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(217, 217, 217, 1);
+}
+.titleinput {
+  position: absolute;
+  width: 242px;
+  height: 39px;
+  margin-top: 126px;
+  margin-left: 906px;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.26px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+.updatebutton {
+  position: absolute;
+  width: 170px;
+  height: 39px;
+  margin-top: 128px;
+  margin-left: 1179px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+  color: rgba(43, 39, 238, 1);
+  background: rgba(217, 217, 217, 1);
+}
+.sugname {
+  position: absolute;
+  width: 242px;
+  height: 39px;
+  margin-top: 186px;
+  margin-left: 633px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(217, 217, 217, 1);
+}
+.suginput {
+  position: absolute;
+  width: 242px;
+  height: 39px;
+  margin-top: 185px;
+  margin-left: 906px;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.26px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
+.sugauthor {
+  position: absolute;
+  width: 242px;
+  height: 39px;
+  margin-top: 244px;
+  margin-left: 633px;
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(217, 217, 217, 1);
+}
+.sugauthorinput {
+  position: absolute;
+  width: 242px;
+  height: 39px;
+  margin-top: 245px;
+  margin-left: 906px;
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.26px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(217, 217, 217, 1);
+}
