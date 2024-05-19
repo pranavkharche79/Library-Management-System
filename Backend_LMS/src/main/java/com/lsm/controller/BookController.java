@@ -1,17 +1,42 @@
 package com.lsm.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.lsm.entity.Book;
+import com.lsm.service.BookService;
+
 @CrossOrigin
 @RestController
-@RequestMapping("api/books")
+@RequestMapping("api/book")
 public class BookController {
 
+	@Autowired
+	private BookService bService;
+	
 	@GetMapping
-	public String getallbooks() {
-		return "run perfectly";
+	public ResponseEntity<?> getallbooks() {
+		return ResponseEntity.ok(bService.getallbooks());
 	}
+	
+	@PostMapping
+	public ResponseEntity<?> addbook(@RequestBody Book book){
+		System.out.println("book="+book);
+		Book b=bService.getbookbybookid(book.getBookid());
+		if(b!=null) {
+			 return ResponseEntity.status(HttpStatus.CONFLICT).body("Book ID already present");
+		}
+		bService.addbook(book);
+		return ResponseEntity.ok("Book Added Successfully");
+	}
+	
+	
+	
 }

@@ -25,19 +25,25 @@ function App() {
         <Home />
         <Routes>
           <Route path="/" element={<Login />} />
+
+          {/* admin */}
+
           <Route path="/adminlogin" element={<AdminLogin />} />
-          <Route path="/studentlogin" element={<StudentLogin />} />
           <Route path="/admindboard" element={<AdminDBoard />} />
           <Route path="/addbook" element={<AddBook />} />
           <Route path="/bsearch" element={<BookSearch />} />
           <Route path="/bupdate" element={<BookUpdate />} />
           <Route path="/vieworder" element={<ViewOrder />} />
           <Route path="/asignout" element={<AdminSignout />} />
+
+          {/* student */}
+
+          <Route path="/studentlogin" element={<StudentLogin />} />
           <Route path="/sbsearch" element={<StudentBookSearch />} />
-          <Route path="/slogout" element={<StudentLogout />} />
           <Route path="/sbookinfo" element={<StudentData />} />
           <Route path="/sbookreturn" element={<ReturnBook />} />
           <Route path="/sorderbook" element={<PlaceOrder />} />
+          <Route path="/slogout" element={<StudentLogout />} />
         </Routes>
       </BrowserRouter>
     </>
