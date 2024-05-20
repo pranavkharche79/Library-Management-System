@@ -11,10 +11,12 @@ public interface BookService {
 
 	Book getbookbyid(Long id);
 
-	void updatebook(Book b);
+	Book updatebook(Book b);
 
 	Boolean deletebook(Long id);
 
 	Book getbookbybookid(Long bookid);
+
+	Book bookSearch(String ser);
 
 }

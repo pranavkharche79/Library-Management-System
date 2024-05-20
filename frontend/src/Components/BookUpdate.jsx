@@ -10,17 +10,26 @@ export default function BookUpdate() {
   const [beforeu, setbeforeu] = useState(false);
   const [bookid, setbookid] = useState(null);
   const [book, setbook] = useState({});
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
-  const [cost, setCost] = useState("");
-  const [quantity, setQuantity] = useState("");
+  const [ubook, setubook] = useState({});
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(ubook);
+    await axios
+      .put(`${API_BASE_URL}api/book`, ubook)
+      .then((res) => {
+        console.log(res.data);
+        alert("Book updated Successfully");
+        setbook(res.data);
+        setubook(res.data);
+        setupdate(false);
+      })
+      .catch((err) => {
+        alert(err);
+      });
   };
 
   const handlebeforeu = async () => {
-    // setbeforeu(true);
     console.log(bookid);
     if (!bookid) {
       alert("Enter Book ID");
@@ -33,6 +42,7 @@ export default function BookUpdate() {
         console.log(res.data);
         alert("Book Search Successfully");
         setbook(res.data);
+        setubook(res.data);
         setbookid(null);
         setbeforeu(true);
       })
@@ -43,6 +53,7 @@ export default function BookUpdate() {
   };
 
   const handleUpdate = () => {
+    console.log(ubook);
     setupdate(true);
   };
 
@@ -154,15 +165,18 @@ export default function BookUpdate() {
             <span className={styles.aftertext}>Book Update</span>
             <div className={styles.formrow}>
               <label htmlFor="bookId">Book Id</label>
-              <span id="bookid">{book.bookid}</span>
+              <span id="bookid">{ubook.bookid}</span>
             </div>
             <div className={styles.formrow}>
               <label htmlFor="title">Title</label>
               <input
                 type="text"
                 id="title"
-                value={book.title}
-                onChange={(e) => setTitle(e.target.value)}
+                value={ubook.title}
+                required
+                onChange={(e) => {
+                  setubook({ ...ubook, title: e.target.value });
+                }}
               />
             </div>
             <div className={styles.formrow}>
@@ -170,8 +184,11 @@ export default function BookUpdate() {
               <input
                 type="text"
                 id="author"
-                value={book.author}
-                onChange={(e) => setAuthor(e.target.value)}
+                value={ubook.author}
+                required
+                onChange={(e) => {
+                  setubook({ ...ubook, author: e.target.value });
+                }}
               />
             </div>
             <div className={styles.formrow}>
@@ -179,8 +196,11 @@ export default function BookUpdate() {
               <input
                 type="number"
                 id="cost"
-                value={book.cost}
-                onChange={(e) => setCost(e.target.value)}
+                value={ubook.cost}
+                required
+                onChange={(e) => {
+                  setubook({ ...ubook, cost: e.target.value });
+                }}
               />
             </div>
             <div className={styles.formrow}>
@@ -188,13 +208,16 @@ export default function BookUpdate() {
               <input
                 type="number"
                 id="quantity"
-                value={book.quantity}
-                onChange={(e) => setQuantity(e.target.value)}
+                value={ubook.quantity}
+                required
+                onChange={(e) => {
+                  setubook({ ...ubook, quantity: e.target.value });
+                }}
               />
             </div>
             <div className={styles.formrow}>
               <button type="submit">Update</button>
-              <button type="submit" onClick={cancelupdate}>
+              <button type="button" onClick={cancelupdate}>
                 Cancel
               </button>
             </div>

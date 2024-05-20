@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Studentnav from "./Studentnav";
 import styles from "../CSS/PlaceOrder.module.css";
+import axios from "axios";
+import { API_BASE_URL } from "../API_Configuration/apiconfig";
 
 export default function PlaceOrder() {
   const [issueDate, setIssueDate] = useState("");
   const [expiryDate, setExpiryDate] = useState("");
+  const [book, setbook] = useState({});
+  const [title, settitle] = useState(null);
 
   const getTodayDate = () => {
     const today = new Date();
@@ -46,6 +50,43 @@ export default function PlaceOrder() {
     return `${formattedDD}/${formattedMM}/${yyyy}`;
   };
 
+  const handelBookSearch = async () => {
+    if (!title) {
+      alert("Enter Book Name");
+      return;
+    }
+    await axios
+      .get(`${API_BASE_URL}api/book/search?title=${title}`)
+      .then((res) => {
+        setbook(res.data);
+      })
+      .catch((err) => {
+        alert(err.response.data);
+        setbook({ ...book, title: "", author: "", quantity: "" });
+      });
+  };
+
+  const handlePlaceOrder = async () => {
+    if (!book.bookid) {
+      alert("Search Book To Purchase");
+      return;
+    }
+    const requestData = {
+      student_id: sessionStorage.getItem("id"),
+      book_id: book.bookid,
+      issue_date: issueDate,
+      expiry_date: expiryDate,
+    };
+    await axios
+      .post(`${API_BASE_URL}api/borrow`, requestData)
+      .then((res) => {
+        alert(res.data);
+      })
+      .catch((err) => {
+        alert(err.response.data);
+      });
+  };
+
   useEffect(() => {
     setIssueDate(getTodayDate());
     setExpiryDate(getDateAfterOneMonth());
@@ -60,25 +101,53 @@ export default function PlaceOrder() {
       <label htmlFor="title" className={styles.bookname}>
         Book Name
       </label>
-      <input type="text" id="title" className={styles.titleinput} />
-      <button type="button" className={styles.updatebutton}>
+      <input
+        type="text"
+        id="title"
+        className={styles.titleinput}
+        value={title || ""}
+        onChange={(e) => {
+          settitle(e.target.value);
+        }}
+      />
+      <button
+        type="button"
+        className={styles.updatebutton}
+        onClick={handelBookSearch}
+      >
         Search
       </button>
       <label htmlFor="title" className={styles.sugname}>
         Suggested
       </label>
-      <input type="text" id="title" className={styles.suginput} />
+      <input
+        type="text"
+        id="title"
+        className={styles.suginput}
+        value={book.title || ""}
+        readOnly
+      />
       <label htmlFor="author" className={styles.sugauthor}>
         Author Name
       </label>
-      <input type="text" id="author" className={styles.sugauthorinput} />
+      <input
+        type="text"
+        id="author"
+        className={styles.sugauthorinput}
+        value={book.author || ""}
+        readOnly
+      />
 
       <span className={styles.orderdetails}>Student Id</span>
-      <span className={styles.orderinfo}>:&nbsp; &nbsp; 101</span>
+      <span className={styles.orderinfo}>
+        :&nbsp; &nbsp; {sessionStorage.getItem("id")}
+      </span>
       <br />
       <br />
       <span className={styles.orderdetails}>Student Name</span>
-      <span className={styles.orderinfo}>:&nbsp; &nbsp; Jon</span>
+      <span className={styles.orderinfo}>
+        :&nbsp; &nbsp; {sessionStorage.getItem("name")}
+      </span>
       <br />
       <br />
       <span className={styles.orderdetails}>Issue Date</span>
@@ -88,7 +157,11 @@ export default function PlaceOrder() {
       <span className={styles.orderdetails}>Expiry Date</span>
       <span className={styles.orderinfo}>:&nbsp; &nbsp; {expiryDate}</span>
 
-      <button type="button" className={styles.orderbut}>
+      <button
+        type="button"
+        className={styles.orderbut}
+        onClick={handlePlaceOrder}
+      >
         Place Order
       </button>
     </>

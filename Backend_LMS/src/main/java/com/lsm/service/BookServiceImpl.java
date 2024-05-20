@@ -30,8 +30,8 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public void updatebook(Book b) {
-		bDao.save(b);
+	public Book updatebook(Book b) {
+		return bDao.save(b);
 	}
 
 	@Override
@@ -47,6 +47,11 @@ public class BookServiceImpl implements BookService{
 	@Override
 	public Book getbookbybookid(Long bookid) {
 		return bDao.getbybookid(bookid);
+	}
+
+	@Override
+	public Book bookSearch(String ser) {
+		return bDao.bookSearch(ser,ser.charAt(0));
 	}
 	
 	

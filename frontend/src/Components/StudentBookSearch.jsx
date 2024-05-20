@@ -1,13 +1,51 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Studentnav from "./Studentnav";
 import styles from "../CSS/StudentBookSearch.module.css";
+import axios from "axios";
+import { API_BASE_URL } from "../API_Configuration/apiconfig";
 
 export default function StudentBookSearch() {
   const [search, setsearch] = useState(false);
+  const [books, setbooks] = useState([]);
+  const [book, setbook] = useState({});
+  const [title, settitle] = useState(null);
 
-  const handelBookSearch = () => {
+  const handelBookSearch = async () => {
+    if (!title) {
+      alert("Enter Book Name");
+      return;
+    }
+    await axios
+      .get(`${API_BASE_URL}api/book/search?title=${title}`)
+      .then((res) => {
+        setbook(res.data);
+        setsearch(false);
+      })
+      .catch((err) => {
+        alert(err.response.data);
+        setbook({ ...book, title: "", author: "", quantity: "" });
+      });
+  };
+
+  const infoOfBookSearch = () => {
     setsearch(true);
   };
+
+  const fetchdata = async () => {
+    axios
+      .get(`${API_BASE_URL}api/book`)
+      .then((res) => {
+        console.log(res.data);
+        setbooks(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
 
   return (
     <>
@@ -23,31 +61,15 @@ export default function StudentBookSearch() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>10</td>
-              </tr>
+              {books.map((item) => {
+                return (
+                  <tr key={item.id}>
+                    <td>{item.title}</td>
+                    <td>{item.author}</td>
+                    <td>{item.quantity}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </>
@@ -58,7 +80,15 @@ export default function StudentBookSearch() {
       <label htmlFor="title" className={styles.bookname}>
         Book Name
       </label>
-      <input type="text" id="title" className={styles.titleinput} />
+      <input
+        type="text"
+        id="title"
+        className={styles.titleinput}
+        value={title || ""}
+        onChange={(e) => {
+          settitle(e.target.value);
+        }}
+      />
       <button
         type="button"
         className={styles.updatebutton}
@@ -69,12 +99,28 @@ export default function StudentBookSearch() {
       <label htmlFor="title" className={styles.sugname}>
         Suggested
       </label>
-      <input type="text" id="title" className={styles.suginput} />
+      <input
+        type="text"
+        id="title"
+        value={book.title}
+        readOnly
+        className={styles.suginput}
+      />
       <label htmlFor="author" className={styles.sugauthor}>
         Author Name
       </label>
-      <input type="text" id="author" className={styles.sugauthorinput} />
-      <button type="button" className={styles.sugsearch}>
+      <input
+        type="text"
+        id="author"
+        value={book.author}
+        readOnly
+        className={styles.sugauthorinput}
+      />
+      <button
+        type="button"
+        className={styles.sugsearch}
+        onClick={infoOfBookSearch}
+      >
         Search
       </button>
       {search && (
@@ -89,9 +135,9 @@ export default function StudentBookSearch() {
             </thead>
             <tbody>
               <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>10</td>
+                <td>{book.title}</td>
+                <td>{book.author}</td>
+                <td>{book.quantity}</td>
               </tr>
             </tbody>
           </table>

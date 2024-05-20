@@ -13,6 +13,18 @@
 }
 
 .returndedails {
+  /* position: absolute;
+  width: 157px;
+  height: 43px;
+  margin-top: 248px;
+  margin-left: 671px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background-color: yellow; */
   position: absolute;
   width: 157px;
   height: 43px;
@@ -27,6 +39,18 @@
 }
 
 .returninfo {
+  /* position: absolute;
+  width: 357px;
+  height: 43px;
+  margin-top: 248px;
+  margin-left: 831px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  background-color: yellow; */
   position: absolute;
   width: 357px;
   height: 43px;
@@ -53,4 +77,46 @@
   text-align: center;
   color: rgba(43, 39, 238, 1);
   background: rgba(217, 217, 217, 1);
+}
+
+.bookperchased {
+  position: absolute;
+  width: 557px;
+  height: 43px;
+  margin-top: 348px;
+  margin-left: 550px;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 34.2px;
+  text-align: center;
+  color: red;
+}
+
+.orderdetails {
+  position: absolute;
+  width: 157px;
+  height: 43px;
+  margin-top: 248px;
+  margin-left: 671px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.orderinfo {
+  position: absolute;
+  width: 357px;
+  height: 43px;
+  margin-top: 248px;
+  margin-left: 831px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
 }

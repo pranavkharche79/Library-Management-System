@@ -1,19 +1,54 @@
 import React, { useState } from "react";
 import Adminnav from "./Adminnav";
 import styles from "../CSS/ViewOrder.module.css";
+import { API_BASE_URL } from "../API_Configuration/apiconfig";
+import axios from "axios";
 
 export default function ViewOrder() {
-  const [totalorder, settotalorder] = useState(false);
+  const [totalstatus, settotalstatus] = useState(false);
+  const [total, settotal] = useState(0);
+  const [book, setbook] = useState({});
+  const [title, settitle] = useState(null);
 
-  const handelOrders = () => {
-    settotalorder(true);
+  const handelBookSearch = async () => {
+    if (!title) {
+      alert("Enter Book Name");
+      return;
+    }
+    await axios
+      .get(`${API_BASE_URL}api/book/search?title=${title}`)
+      .then((res) => {
+        console.log(res.data);
+        setbook(res.data);
+      })
+      .catch((err) => {
+        alert(err.response.data);
+        setbook({ ...book, title: "", author: "", quantity: "" });
+      });
+  };
+
+  const handelOrders = async () => {
+    if (!book.bookid) {
+      alert("Search Book Name");
+      return;
+    }
+    await axios
+      .get(`${API_BASE_URL}api/borrow/count/${book.bookid}`)
+      .then((res) => {
+        console.log(res.data);
+        settotal(res.data);
+        settotalstatus(true);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
     <>
       <Adminnav />
 
-      {!totalorder && (
+      {!totalstatus && (
         <>
           <table className={styles.table}>
             <thead>
@@ -28,21 +63,23 @@ export default function ViewOrder() {
             </thead>
             <tbody>
               <tr>
-                <td>sfdsdfsg</td>
-                <td>dfgdfgd</td>
-                <td>234</td>
-                <td>Pranav Kharche</td>
-                <td>23/11/2021</td>
-                <td>23/12/2021</td>
+                <td>Secret Agent</td>
+                <td>Joseph Conwa</td>
+                <td>101</td>
+                <td>John</td>
+                <td>20/05/2024</td>
+                <td>20/06/2024</td>
               </tr>
             </tbody>
           </table>
         </>
       )}
 
-      {totalorder && (
+      {totalstatus && (
         <>
-          <div className={styles.totalorder}>Total Number Of Order = 0</div>
+          <div className={styles.totalorder}>
+            Total Number Of Order = {total}
+          </div>
         </>
       )}
 
@@ -52,23 +89,43 @@ export default function ViewOrder() {
       <label htmlFor="title" className={styles.bookname}>
         Book Name
       </label>
-      <input type="text" id="title" className={styles.titleinput} />
+      <input
+        type="text"
+        id="title"
+        className={styles.titleinput}
+        value={title || ""}
+        onChange={(e) => {
+          settitle(e.target.value);
+        }}
+      />
       <button
         type="button"
         className={styles.updatebutton}
-        onClick={handelOrders}
+        onClick={handelBookSearch}
       >
         Search
       </button>
       <label htmlFor="title" className={styles.sugname}>
         Suggested
       </label>
-      <input type="text" id="title" className={styles.suginput} />
+      <input
+        type="text"
+        id="title"
+        className={styles.suginput}
+        value={book.title}
+        readOnly
+      />
       <label htmlFor="author" className={styles.sugauthor}>
         Author
       </label>
-      <input type="text" id="author" className={styles.sugauthorinput} />
-      <button type="button" className={styles.sugsearch}>
+      <input
+        type="text"
+        id="author"
+        className={styles.sugauthorinput}
+        value={book.author}
+        readOnly
+      />
+      <button type="button" className={styles.sugsearch} onClick={handelOrders}>
         Search
       </button>
     </>
