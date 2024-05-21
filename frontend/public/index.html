@@ -25,7 +25,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <style>
+    <!-- <style>
       .background {
         background-image: url(./backgroung.png);
         background-size: cover;
@@ -38,10 +38,28 @@
         box-shadow: 0px 50px 4px 0px rgba(0, 0, 0, 0.25);
         z-index: -1;
       }
+    </style> -->
+
+    <style>
+      .background-container {
+        position: relative;
+        background-image: url(./backgroung.png);
+        background-size: cover;
+        background-position: center;
+        width: 1489px;
+        height: 1076px;
+        border: 1px solid #000000;
+        opacity: 1;
+        box-shadow: 0px 50px 4px 0px rgba(0, 0, 0, 0.25);
+      }
     </style>
   </head>
-  <body class="background">
+  <!-- <body class="background">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+  </body> -->
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="background-container"></div>
   </body>
 </html>
